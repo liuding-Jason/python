@@ -1,5 +1,4 @@
 
-
 #!/usr/bin/python
 
 # pass sentence is only a blank block
