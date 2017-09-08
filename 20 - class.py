@@ -7,7 +7,12 @@
 #
 
 class Person :
+    # private variable
+    __part = ''
+    # static variable
     number = 0
+    # protect variable
+    _abc = ''
     def __init__(self , name , age):
         self.name = name
         self.age = age
