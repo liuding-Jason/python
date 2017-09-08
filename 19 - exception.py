@@ -27,7 +27,7 @@ else:
     fo.close()
 
 #
-# 3 - finally would always be  runed
+# 3 - finally would always be runed
 #
 
 try:
@@ -38,8 +38,6 @@ else:
     print 'else'
 finally:
     print 'the finnal result '
-
-
 
 #
 # 4 - exception with params
