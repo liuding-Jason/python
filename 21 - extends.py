@@ -3,6 +3,16 @@
 #
 # extends
 #
+
+# person
+class Person:
+    personNum = 0
+
+    def eat(self):
+        print 'a person can eat'
+    def sleep(self):
+        print 'a person can sleep'
+
 # parent
 class Parent :
     mom = 'mother'
@@ -19,14 +29,11 @@ class Parent :
     # show age
     def showAge(self):
         print "your parent's age is " , self.age
-    # def eat
-    def eat(self):
-        print "a parent can eat something"
     def __del__(self):
         print 'your object had been destoryed'
 
 # child
-class Child(Parent):
+class Child(Person , Parent):
     childNum = 0
     def __init__(self , name , age , gender):
         Parent.__init__(self , name , age)
