@@ -62,13 +62,11 @@ def add_candle(son_fun):
     def insert_candle():
         return son_fun() + 'candles'
     return insert_candle
-
+# make_cake = add_candle(make_cake)
+@add_candle
 def make_cake():
     return 'cake'
-
-my_fun = add_candle(make_cake)
-
-print my_fun()
+print make_cake()
 
 
 
