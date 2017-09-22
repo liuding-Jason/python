@@ -54,3 +54,21 @@ delattr(person , 'school')
 print id(person)
 del person
 
+
+#
+# 3 - decorator modal
+#
+def add_candle(son_fun):
+    def insert_candle():
+        return son_fun() + 'candles'
+    return insert_candle
+
+def make_cake():
+    return 'cake'
+
+my_fun = add_candle(make_cake)
+
+print my_fun()
+
+
+
